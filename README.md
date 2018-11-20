@@ -14,6 +14,12 @@ Mode 2 - "copy" - It will copy all snapshots created for the same day to the ano
 
 ```go install github.com/ankitschopra/CrossRegionRDSBacker```
 
+
+
+# Download < In case you dont have Go setup>
+Download from Release section - https://github.com/ankitschopra/CrossRegionRDSBacker/releases/
+
+# How to Use
 ```
 $GOPATH/bin/CrossRegionRDSBacker --help
 Usage of ./CrossRegionRDSBacker:
@@ -25,8 +31,7 @@ Usage of ./CrossRegionRDSBacker:
   -retentionDays int
     	No of days the snapshots to be retained in Both Source and destination Region. Defaults to 3 (default 3)
   -sourceRDSRegion string
-    	Region of AWS where RDS instances are present
-      ```
+    	Region of AWS where RDS instances are present```
       
       
       
