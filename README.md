@@ -8,3 +8,26 @@ This Utility runs in two modes
 Mode 1 - "create" - It will create a snapshot of the current date for all RDS instances in source Region and do the clean up of old snapshots. 
 Mode 2 - "copy" - It will copy all snapshots created for the same day to the another region. This should be run after the "create" mode
 
+# Install
+
+```go get github.com/ankitschopra/CrossRegionRDSBacker```
+
+```go install github.com/ankitschopra/CrossRegionRDSBacker```
+
+```
+$GOPATH/bin/CrossRegionRDSBacker --help
+Usage of ./CrossRegionRDSBacker:
+  -destRDSRegion string
+    	Region of AWS where Snapshot of Source Region RDS to be copied
+  -mode string
+    	This Script Runs in two mode, Mode 1 - "create": Create the snapshot of all RDS in source Region and delete old snapshots beyond retention days.
+    	                 Mode 2 - "copy": It will copy the current date snapshot to the destination region.
+  -retentionDays int
+    	No of days the snapshots to be retained in Both Source and destination Region. Defaults to 3 (default 3)
+  -sourceRDSRegion string
+    	Region of AWS where RDS instances are present
+      ```
+      
+      
+      
+      
