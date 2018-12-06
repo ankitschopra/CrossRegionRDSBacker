@@ -31,8 +31,10 @@ Usage of ./CrossRegionRDSBacker:
   -retentionDays int
     	No of days the snapshots to be retained in Both Source and destination Region. Defaults to 3 (default 3)
   -sourceRDSRegion string
-    	Region of AWS where RDS instances are present```
+    	Region of AWS where RDS instances are present
+ ```
       
       
-      
-      
+# Limitation with AWS
+currently there is limit of 5 concurrent snapshot at a time for Cross Region copy. Its a hard limmit from AWS. We need to add the functionality here in the script to handle it for now.
+
