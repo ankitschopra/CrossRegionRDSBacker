@@ -36,5 +36,6 @@ Usage of ./CrossRegionRDSBacker:
       
       
 # Limitation with AWS
-currently there is limit of 5 concurrent snapshot at a time for Cross Region copy. Its a hard limmit from AWS. We need to add the functionality here in the script to handle it for now.
+1. currently there is limit of 5 concurrent snapshot at a time for Cross Region copy. Its a hard limmit from AWS. We need to add the functionality here in the script to handle it for now.
+2. Need to skip the Read Replicas from snapshoting. 
 
